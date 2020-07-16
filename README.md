@@ -1,2 +1,8 @@
-# -MATLAB-
-Digital-Image-Processing with MATLAB
+# 数字图像处理matlab版
+仓库内主要为数字图像处理matlab版本
+书中示例中的测试代码 所提交内容均通过测试
+能够在机器上正确运行
+
+机器信息：
+MATLAB版本：9.5.0.944444 (R2018b)
+系统版本：windows 10
