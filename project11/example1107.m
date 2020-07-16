@@ -1,0 +1,11 @@
+f=imread('img/Fig1120(a)(chromosome_boundary).tif');
+f=im2double(f);
+h = fspecial('gaussian',25,15);
+g = imfilter(f,h,'replicate');
+imshow(g);
+g = im2bw(g,1.5*graythresh(g));
+figure,imshow(g);
+s=bwmorph(g,'skel',Inf);
+figure,imshow(s);
+s1=bwmorph(s,'spur',8);
+figure,imshow(s1);

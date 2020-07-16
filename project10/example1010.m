@@ -1,0 +1,11 @@
+f=imread('img/Fig0941(a)(wood_dowels).tif');
+g=im2bw(f,graythresh(f));
+imshow(g);
+gc=~g;
+D=bwdist(gc);
+figure,imshow(D);
+L=watershed(-D);
+figure,imshow(L);
+w=L==0;
+g2=g&~w;
+figure,imshow(g2);
